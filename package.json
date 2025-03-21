@@ -1,0 +1,31 @@
+{
+  "name": "delivery-service",
+  "version": "1.0.0",
+  "description": "App for users and courieres",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "Delivery",
+    "courier",
+    "user",
+    "service",
+    "app",
+    "web"
+  ],
+  "author": "Kirill Dorofeev <dorofeevkirill2248@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "config": "^3.3.12",
+    "nodemon": "^3.1.9"
+  }
+}
