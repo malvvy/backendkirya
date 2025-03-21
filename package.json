@@ -20,6 +20,7 @@
   "author": "Kirill Dorofeev <dorofeevkirill2248@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2"
   },
