@@ -3,7 +3,6 @@ const jwt = require('jsonwebtoken')
 require('dotenv').config()
 
 const app = express()
-const PORT = config.get('port')
 
 app.get('/', (req, res) => {
     const name = req.query.name || 'user'
@@ -37,5 +36,5 @@ app.get('/protected', checkToken, (req, res) => {
 
 app.listen(process.env.PORT, (err) => {
     if (err) console.log('Server crashed', err.message)
-        else console.log(`Server started successfully on http://localhost:${PORT}`)
+        else console.log(`Server started successfully on http://localhost:${process.env.PORT}`)
 })
